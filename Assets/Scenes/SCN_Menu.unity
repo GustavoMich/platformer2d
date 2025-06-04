@@ -331,27 +331,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5470190926688754456, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_text
-      value: Credits
+      value: Sobre
       objectReference: {fileID: 0}
     - target: {fileID: 6333164307428092584, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7233240979687181909, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Name
-      value: PFB_Credits
+      value: PFB_Sobre
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233240979687181909, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.b
-      value: 0.83137256
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.5058824
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.r
-      value: 0.3647059
+      value: 0.83137256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
@@ -3129,7 +3133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5470190926688754456, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_text
-      value: Exit
+      value: Sair
       objectReference: {fileID: 0}
     - target: {fileID: 6333164307428092584, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3161,19 +3165,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7233240979687181909, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Name
-      value: PFB_Exit
+      value: PFB_Sair
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.b
-      value: 0.83137256
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.5058824
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.r
-      value: 0.3647059
+      value: 0.83137256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
@@ -4113,7 +4117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5470190926688754456, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_text
-      value: Play
+      value: Jogar
       objectReference: {fileID: 0}
     - target: {fileID: 6333164307428092584, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4149,19 +4153,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7233240979687181909, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Name
-      value: PFB_Play
+      value: PFB_Jogar
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.b
-      value: 0.8301887
+      value: 0.36470592
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.g
-      value: 0.53440297
+      value: 0.5044659
       objectReference: {fileID: 0}
     - target: {fileID: 7980319079897934268, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
       propertyPath: m_Color.r
-      value: 0.36418653
+      value: 0.83137256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc74968bebb962d498c3996ffff57cd4, type: 3}
