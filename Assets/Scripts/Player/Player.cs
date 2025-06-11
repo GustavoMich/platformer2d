@@ -21,6 +21,14 @@ public class Player : MonoBehaviour
     public Ease ease = Ease.OutBack;
 
 
+    [Header("Animation player")]
+    public string boolRun = "Run";
+    public string boolJump = "Jump";
+    public string boolJumpDown = "JumpDown";
+    public Animator animator;
+    public float playerSwipeDuration = .1f;
+
+
     private float _currentSpeed;
 
 
@@ -34,22 +42,44 @@ public class Player : MonoBehaviour
     private void HandleMoviment()
     {
         if (Input.GetKey(KeyCode.LeftShift))
+        {
             _currentSpeed = speedRun;
+           animator.speed = 2;
+
+        }
         else
+        {
             _currentSpeed = speed;
+           animator.speed = 1;
+
+        }
 
 
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             myRigidbody.velocity = new Vector2(-_currentSpeed, myRigidbody.velocity.y);
+            if(myRigidbody.transform.localScale.x != -1)
+            {
+                myRigidbody.transform.DOScaleX(-1, playerSwipeDuration);
+            }
+            animator.SetBool(boolRun, true);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             myRigidbody.velocity = new Vector2(_currentSpeed, myRigidbody.velocity.y);
+            if (myRigidbody.transform.localScale.x != 1)
+            {
+                myRigidbody.transform.DOScaleX(1, playerSwipeDuration);
+            }
+            animator.SetBool(boolRun, true);
+        }
+        else
+        {
+            animator.SetBool(boolRun, false);
         }
 
-        if(myRigidbody.velocity.x > 0)
+        if (myRigidbody.velocity.x > 0)
         {
             myRigidbody.velocity += friction;
         }
@@ -65,13 +95,19 @@ public class Player : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.up * forceJump;
             myRigidbody.transform.localScale = Vector2.one;
+            animator.SetBool(boolJump, true);
+
 
             DOTween.Kill(myRigidbody.transform);
 
-            HandleScaleJump();
+        }
+        else
+        {
+            animator.SetBool(boolJump, false);
+            animator.SetBool(boolJumpDown, true);
 
         }
-        
+
     }
 
     private void HandleScaleJump()
