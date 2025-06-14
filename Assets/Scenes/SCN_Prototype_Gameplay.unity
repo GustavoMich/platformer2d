@@ -1683,6 +1683,19 @@ MonoBehaviour:
   - {fileID: 1520246271}
   color: {r: 1, g: 0.33490568, b: 0.33490568, a: 1}
   duration: 0.2
+--- !u!114 &666612592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666612589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834509786e171194b96be5b7d51734c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1006116002}
 --- !u!1 &684387497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2534,9 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 1478357226}
   triggerAttack: Attack
+  triggerKill: Death
   healthBase: {fileID: 955561902}
+  timeToDestroy: 1
 --- !u!4 &955561899
 Transform:
   m_ObjectHideFlags: 0
@@ -2591,8 +2606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084d1b5a77e9e984d98ba035919cf054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLife: 10
-  destroyOnKill: 1
+  startLife: 3
+  destroyOnKill: 0
   delayToKill: 0
   _flashColor: {fileID: 0}
 --- !u!1001 &965999264
@@ -2933,6 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 1006116003}
+  healthBase: {fileID: 1006116007}
   friction: {x: -0.3, y: 0}
   speed: 10
   speedRun: 25
@@ -2942,6 +2958,7 @@ MonoBehaviour:
   animationDuration: 0.3
   ease: 27
   boolRun: Run
+  triggerDeath: Death
   boolJump: Jump
   boolJumpDown: JumpDown
   animator: {fileID: 23535906}
@@ -3021,7 +3038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLife: 10
-  destroyOnKill: 1
+  destroyOnKill: 0
   delayToKill: 1
   _flashColor: {fileID: 666612591}
 --- !u!212 &1016398088 stripped
