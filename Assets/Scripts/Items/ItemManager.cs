@@ -7,7 +7,9 @@ public class ItemManager : Singleton<ItemManager>
 {
 
     public int coins;
+    
 
+    
 
     private void Start()
     {
@@ -25,4 +27,7 @@ public class ItemManager : Singleton<ItemManager>
     {
         coins += amount;
     }
+
+    
+    
 }

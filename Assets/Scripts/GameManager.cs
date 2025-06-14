@@ -5,6 +5,7 @@ using Ebac.Core.Singleton;
 using DG.Tweening;
 
 
+
 public class GameManager : Singleton<GameManager>
 {
     [Header("Player")]
@@ -23,10 +24,13 @@ public class GameManager : Singleton<GameManager>
     public float Delay = .05f;
     public Ease ease = Ease.OutBack;
 
+    
+
 
     private void Start()
     {
         Init();
+        
     }
 
     public void Init()
@@ -43,5 +47,8 @@ public class GameManager : Singleton<GameManager>
         _currentPlayer.transform.position = startPoint.transform.position;
         _currentPlayer.transform.DOScale(0, duration).SetEase(ease).From().SetDelay(Delay);
     }
+
+    
+    
 
 }
