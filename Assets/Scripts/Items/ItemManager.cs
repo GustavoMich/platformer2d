@@ -8,9 +8,11 @@ public class ItemManager : Singleton<ItemManager>
 {
 
     public SOInt coins;
+    public SOInt stars;
     public TextMeshProUGUI uiTextCoins;
+    public TextMeshProUGUI uiTextStars;
 
-    
+
 
     private void Start()
     {
@@ -22,6 +24,7 @@ public class ItemManager : Singleton<ItemManager>
     private void Reset()
     {
         coins.value = 0;
+        stars.value = 0;
         UpdateUI();
     }
 
@@ -29,6 +32,13 @@ public class ItemManager : Singleton<ItemManager>
     {
         coins.value += amount;
         UpdateUI();
+    }
+
+    public void AddStars(int amount = 1)
+    {
+        stars.value += amount;
+        UpdateUI();
+
     }
 
     private void UpdateUI()
