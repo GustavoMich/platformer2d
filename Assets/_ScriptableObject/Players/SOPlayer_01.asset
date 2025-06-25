@@ -17,7 +17,7 @@ MonoBehaviour:
   friction: {x: -0.3, y: 0}
   speed: 17
   speedRun: 25
-  forceJump: 20
+  forceJump: 37
   JumpScaleY: 1.5
   JumpScaleX: 0.7
   animationDuration: 0.3
