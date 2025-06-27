@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6706664275957525644}
   - component: {fileID: 6706664275957525645}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: PFB_Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,3 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 5
+  graphicItem: {fileID: 6706664275957525746}
+  audioSource: {fileID: 0}
