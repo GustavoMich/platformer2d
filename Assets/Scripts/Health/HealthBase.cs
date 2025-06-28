@@ -6,7 +6,7 @@ using UnityEngine;
 public class HealthBase : MonoBehaviour
 {
     public Action OnKill;
-
+    public GameObject uiEndGame;
 
     public int startLife = 10;
 
@@ -64,5 +64,7 @@ public class HealthBase : MonoBehaviour
         }
 
         OnKill?.Invoke();
+
+        uiEndGame.SetActive(true);
     }
 }

@@ -117,3 +117,4 @@ MonoBehaviour:
   timeToHide: 5
   graphicItem: {fileID: 6706664275957525746}
   audioSource: {fileID: 0}
+  collider: {fileID: 6706664275957525644}

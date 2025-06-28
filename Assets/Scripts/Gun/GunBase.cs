@@ -13,7 +13,10 @@ public class GunBase : MonoBehaviour
 
     private Coroutine _currentCoroutine;
 
-
+    private void Awake()
+    {
+        playerSideReference = GameObject.FindObjectOfType<Player>().transform;
+    }
     
     void Update()
     {
