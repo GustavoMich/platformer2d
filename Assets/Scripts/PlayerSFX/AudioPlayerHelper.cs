@@ -6,11 +6,17 @@ public class AudioPlayerHelper : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    public AudioSource jumpSFX;
 
 
 
     public void Play()
     {
         audioSource.Play();
+    }
+
+    public void JumpPlay()
+    {
+        jumpSFX.Play();
     }
 }
